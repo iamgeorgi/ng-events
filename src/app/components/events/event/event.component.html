@@ -1,0 +1,8 @@
+<div class="card" style="width: 20rem; height: 22rem">
+    <img class="card-img-top" [src]="singleEvent.imageUrl" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{ singleEvent.name }}</h5>
+      <p class="card-text"><span>Starts:</span> {{ singleEvent.time }}</p>
+      <a class="btn btn-primary" navigateTo [routePath]="'/events/' + singleEvent.id">More Details</a>
+    </div>
+</div>

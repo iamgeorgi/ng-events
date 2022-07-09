@@ -1,0 +1,23 @@
+<div>
+    <img [src]="itemProperties.imageUrl" [alt]="itemProperties.name">
+    <div class="row">
+      <div class="col-md-11">
+        <h2>{{ itemProperties.name }}</h2>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-md-6">
+        <div><strong>Date:</strong>{{ itemProperties.date }}</div>
+        <div><strong>Time:</strong>{{ itemProperties.time }}</div>
+        <div><strong>Price:</strong>{{ itemProperties.price }}</div>
+      </div>
+      <div class="col-md-6">
+        <address>
+          <strong>Address:</strong><br />
+          {{ itemProperties.location.address }}<br />
+          {{ itemProperties.location.city }}, {{ itemProperties.location.country }}
+        </address>
+      </div>
+    </div>
+  </div>
